@@ -1,0 +1,83 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.858342,
+                    1.290653
+                ]
+            },
+            "properties": {
+                "name": "5 Raffles Avenue, Singapore 039797"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.852966,
+                    1.28626
+                ]
+            },
+            "properties": {
+                "name": "1 Fullerton Square, Singapore 049178"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.808598,
+                    1.267374
+                ]
+            },
+            "properties": {
+                "name": "10 Bukit Chermin Road, Singapore 109918"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.832539,
+                    1.305236
+                ]
+            },
+            "properties": {
+                "name": "320 Orchard Road, Singapore 238865"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.825891,
+                    1.30599
+                ]
+            },
+            "properties": {
+                "name": "29 Tanglin Road, Singapore 247911"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.844056,
+                    1.282739
+                ]
+            },
+            "properties": {
+                "name": "20 Trengganu Street, Singapore 058479"
+            }
+        }
+    ]
+}

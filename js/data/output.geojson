@@ -1,0 +1,46 @@
+{ "type" : "FeatureCollection",
+    "features" : [
+        { "type" : "Feature",
+            "id" : 1,
+            "geometry" : {
+                "type" : "Point",
+                "coordinates" : [103.858342,1.290653]},
+            "properties" : { "name" : "5 Raffles Avenue"}
+        },
+        { "type" : "Feature",
+            "id" : 2,
+            "geometry" : {
+                "type" : "Point",
+                "coordinates" : [103.852966,1.28626]},
+            "properties" : { "name" : "1 Fullerton Square"}
+        },
+        { "type" : "Feature",
+            "id" : 3,
+            "geometry" : {
+                "type" : "Point",
+                "coordinates" : [103.808598,1.267374]},
+            "properties" : { "name" : "10 Bukit Chermin Road"}
+        },
+        { "type" : "Feature",
+            "id" : 4,
+            "geometry" : {
+                "type" : "Point",
+                "coordinates" : [103.832539,1.305236]},
+            "properties" : { "name" : "320 Orchard Road"}
+        },
+        { "type" : "Feature",
+            "id" : 5,
+            "geometry" : {
+                "type" : "Point",
+                "coordinates" : [103.825891,1.30599]},
+            "properties" : { "name" : "29 Tanglin Road"}
+        },
+        { "type" : "Feature",
+            "id" : 6,
+            "geometry" : {
+                "type" : "Point",
+                "coordinates" : [103.844056,1.282739]},
+            "properties" : { "name" : "#02-01, 20 Trengganu Street"}
+        }     ]
+}
+    
