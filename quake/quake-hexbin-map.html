@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.css" />
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.ie.css" />
+    <![endif]-->
+
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="http://d3js.org/d3.hexbin.v0.js"></script>
+    <script src="http://cdn.leafletjs.com/leaflet-0.5/leaflet-src.js"></script>
+
+
+    <script src="js/colorbrewer.js"></script>
+    <script src="js/leaflet.hexbin-layer.js"></script>
+    <script src="js/simple_statistics.js"></script>
+
+    <style type="text/css">
+      html, body { margin: 0; padding: 0; height: 100%; }
+
+      #quake { min-height: 100%; }
+      .hexagon { opacity: 1 }
+
+      #tooltip {
+          opacity: 0.95;
+          background: #333;
+          padding: 0px;
+          border: 1px solid lightgrey;
+          font-size: 13px;
+          border-radius: 5px;
+          position: absolute;
+          z-index: 10;
+          visibility: hidden;
+          pointer-events: none;
+      }
+
+      .tg  {border-collapse:collapse;border-spacing:0;border-color:#aaa;}
+      .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#aaa;color:#333;background-color:#fff;}
+      .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#aaa;color:#fff;background-color:#f38630;}
+      .tg .tg-ksoi{font-size:13px;font-family:serif !important;}
+
+
+    </style>
+  </head>
+  <body>
+    <div id='quake' data-source="data/op.json"></div>
+    <script type="text/javascript">
+      (function () {
+          var max, scale,
+              classes = 6,
+              scheme = colorbrewer["YlOrRd"][classes],
+              container = L.DomUtil.get('quake'),
+              map = L.map(container).setView([1.3715473, 103.8075655], 13);
+
+          L.tileLayer('http://{s}.tile.cloudmade.com/{key}/{styleId}/256/{z}/{x}/{y}.png', {
+              attribution: '&copy; 2013 OpenStreetMap &copy; 2013 CloudMade',
+              key: 'db1f78ccee5f480b82c56ff9b18639e9',//Please don't use my key. It's free!!!
+              styleId:122089  //82102  108996          //Go to www.cloudmade.com to get a key.
+          }).addTo(map);
+
+
+          // Async call for data. Source URL is loaded from container element's
+          // 'data-source' attribute.
+          d3.json(container.dataset.source, function(collection) {
+              // When data arrives, create leaflet layer with custom style callback.
+              L.hexLayer(collection, {
+                  applyStyle: hex_style
+              }).addTo(map);
+          });
+
+          /**
+           * Hexbin style callback.
+           *
+           * Determines a quantize scale (http://bl.ocks.org/4060606) based on the
+           * map's initial data density (which is based on the initial zoom level)
+           * and applies a colorbrewer (http://colorbrewer2.org/) colour scheme
+           * accordingly.
+           */
+
+
+          var tooltip = d3.select("body")
+                  .append("div")
+                  .attr("id","tooltip")
+                  .style("position", "fixed")
+                  .style("z-index", "10")
+                  .style("visibility", "hidden")
+                  .style("color", "white")
+//                    .style("top", 0+"px").style("right",0+"px")
+
+
+            function hex_style(hexagons) {
+
+
+              var averageFunction = function(d) {
+                  var sum = 0;
+                  for(var i = 0; i < d.length; i++)
+                  {
+                      sum += +d[i][2].price;
+                  }
+                  return sum/d.length;
+              };
+
+
+
+              // Maintain a density scale relative to initial zoom level.
+              if (!(max && scale)) {
+                  max = d3.max(hexagons.data(), function (d) { return averageFunction(d); });
+                  min = d3.min(hexagons.data(), function (d) { return averageFunction(d); });
+
+                  var counts = [];
+                  hexagons.data().map(function (elem) { counts.push(averageFunction(elem)) });
+//                  this._rscale.domain([ss.min(counts), (ss.mean(counts) + (ss.standard_deviation(counts) * 10))]);
+
+                  scale = d3.scale.quantize()
+                          .domain([ss.min(counts), ss.mean(counts) + (ss.standard_deviation(counts) * 3)])
+                          .range(d3.range(classes));
+              }
+
+
+              hexagons
+                  .attr("stroke", "black")
+//                  .attr("stroke", scheme[classes - 1])
+                  .attr("fill", function (d) {
+                      return scheme[scale(averageFunction(d))];
+                  }).on("mouseover", function (d)
+
+                      {
+
+                          function objToString (obj) {
+                              var str = '';
+                              for (var p in obj) {
+                                  if (obj.hasOwnProperty(p)) {
+                                      str +='<td class="tg-ksoi">' +  obj[p] + '</td>';
+                                  }
+                              }
+                              return str;
+                          }
+
+
+                          var displayToolBoxText=[];
+                          for(var i = 0; i < d.length; i++)
+                          {
+                              //append header
+                              if(i == 0)
+                              {
+                                  displayToolBoxText ="<table class='tg'><tr>";
+                                  obj=d[i][2]
+                                  for (var p in obj)
+                                  {
+                                      if (obj.hasOwnProperty(p))
+                                      {
+                                        displayToolBoxText +='<th class="tg-ksoi">' + p + '</th>';
+                                      }
+                                  }
+                                  displayToolBoxText +="</tr>";
+
+                              }
+                              displayToolBoxText+="<tr>"
+                              displayToolBoxText += objToString(d[i][2]);
+                              displayToolBoxText+="</tr>"
+                              if(i == d.length-1)
+                              {
+                                  displayToolBoxText+="</table>"
+                              }
+                          }
+
+                          tooltip.style("visibility", "visible");
+                          tooltip.style("top", (event.pageY-10)+"px").style("left",(event.pageX+10)+"px");
+                          tooltip.html(displayToolBoxText)
+
+                      })
+                      .on("mouseout", function (d) {
+                          tooltip.style("visibility", "hidden");
+                          return d});
+
+
+          }
+      }());
+    </script>
+  </body>
+</html>
+

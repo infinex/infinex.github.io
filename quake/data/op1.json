@@ -1,0 +1,354 @@
+{ "type" : "FeatureCollection",
+    "features" : [
+        { "type" : "Feature",
+            "id" : 1,
+            "geometry" : {
+                "type" : "Point",
+                "coordinates" : [103.7931457,1.440143942]},
+            "properties" : { "name" : "855 Woodlands Street 83","price" : 372000,"sqft" : 904}
+        },
+        { "type" : "Feature",
+            "id" : 2,
+            "geometry" : {
+                "type" : "Point",
+                "coordinates" : [103.8370467,1.376203485]},
+            "properties" : { "name" : "178 Ang Mo Kio Avenue 4","price" : 380000,"sqft" : 882}
+        },
+        { "type" : "Feature",
+            "id" : 3,
+            "geometry" : {
+                "type" : "Point",
+                "coordinates" : [103.7647823,1.317373127]},
+            "properties" : { "name" : "319 Clementi Avenue 4","price" : 408000,"sqft" : 721}
+        },
+        { "type" : "Feature",
+            "id" : 4,
+            "geometry" : {
+                "type" : "Point",
+                "coordinates" : [103.8789769,1.379486519]},
+            "properties" : { "name" : "979A Buangkok Crescent","price" : 425000,"sqft" : 968}
+        },
+        { "type" : "Feature",
+            "id" : 5,
+            "geometry" : {
+                "type" : "Point",
+                "coordinates" : [103.9009723,1.321011853]},
+            "properties" : { "name" : "34 Eunos Crescent","price" : 430000,"sqft" : 645}
+        },
+        { "type" : "Feature",
+            "id" : 6,
+            "geometry" : {
+                "type" : "Point",
+                "coordinates" : [103.7036525,1.345835527]},
+            "properties" : { "name" : "675B Jurong West Street 64","price" : 515000,"sqft" : 1194}
+        },
+        { "type" : "Feature",
+            "id" : 7,
+            "geometry" : {
+                "type" : "Point",
+                "coordinates" : [103.848183,1.354641571]},
+            "properties" : { "name" : "207 Bishan Street 23","price" : 530000,"sqft" : 1108}
+        },
+        { "type" : "Feature",
+            "id" : 8,
+            "geometry" : {
+                "type" : "Point",
+                "coordinates" : [103.8299173,1.426496476]},
+            "properties" : { "name" : "724 Yishun Street 71","price" : 590000,"sqft" : 1528}
+        },
+        { "type" : "Feature",
+            "id" : 9,
+            "geometry" : {
+                "type" : "Point",
+                "coordinates" : [103.8253899,1.283622096]},
+            "properties" : { "name" : "25B Jalan Membina","price" : 704000,"sqft" : 968}
+        },
+        { "type" : "Feature",
+            "id" : 10,
+            "geometry" : {
+                "type" : "Point",
+                "coordinates" : [103.9551801,1.350016938]},
+            "properties" : { "name" : "291 Tampines Street 22","price" : 460000,"sqft" : 1119}
+        },
+        { "type" : "Feature",
+            "id" : 11,
+            "geometry" : {
+                "type" : "Point",
+                "coordinates" : [103.8193907,1.278358458]},
+            "properties" : { "name" : "7 Telok Blangah Crescent","price" : 233000,"sqft" : 333}
+        },
+        { "type" : "Feature",
+            "id" : 12,
+            "geometry" : {
+                "type" : "Point",
+                "coordinates" : [103.8855554,1.326487386]},
+            "properties" : { "name" : "43 Circuit Road","price" : 240000,"sqft" : 452}
+        },
+        { "type" : "Feature",
+            "id" : 13,
+            "geometry" : {
+                "type" : "Point",
+                "coordinates" : [103.7986533,1.306802055]},
+            "properties" : { "name" : "110 Commonwealth Crescent","price" : 250000,"sqft" : 484}
+        },
+        { "type" : "Feature",
+            "id" : 14,
+            "geometry" : {
+                "type" : "Point",
+                "coordinates" : [103.777886,1.442286689]},
+            "properties" : { "name" : "16 Marsiling Lane","price" : 250000,"sqft" : 484}
+        },
+        { "type" : "Feature",
+            "id" : 15,
+            "geometry" : {
+                "type" : "Point",
+                "coordinates" : [103.9379318,1.334477017]},
+            "properties" : { "name" : "101 Bedok North Avenue 4","price" : 260000,"sqft" : 484}
+        },
+        { "type" : "Feature",
+            "id" : 16,
+            "geometry" : {
+                "type" : "Point",
+                "coordinates" : [103.8538752,1.362003246]},
+            "properties" : { "name" : "406 Ang Mo Kio Avenue 10","price" : 260000,"sqft" : 473}
+        },
+        { "type" : "Feature",
+            "id" : 17,
+            "geometry" : {
+                "type" : "Point",
+                "coordinates" : [103.8260625,1.289118652]},
+            "properties" : { "name" : "48 Lower Delta Road","price" : 260000,"sqft" : 462}
+        },
+        { "type" : "Feature",
+            "id" : 18,
+            "geometry" : {
+                "type" : "Point",
+                "coordinates" : [103.9289217,1.33223586]},
+            "properties" : { "name" : "514 Bedok North Avenue 2","price" : 260000,"sqft" : 484}
+        },
+        { "type" : "Feature",
+            "id" : 19,
+            "geometry" : {
+                "type" : "Point",
+                "coordinates" : [103.9248947,1.333014927]},
+            "properties" : { "name" : "534 Bedok North Street 3","price" : 265000,"sqft" : 484}
+        },
+        { "type" : "Feature",
+            "id" : 20,
+            "geometry" : {
+                "type" : "Point",
+                "coordinates" : [103.8003946,1.304206895]},
+            "properties" : { "name" : "82 Commonwealth Close","price" : 265000,"sqft" : 495}
+        },
+        { "type" : "Feature",
+            "id" : 21,
+            "geometry" : {
+                "type" : "Point",
+                "coordinates" : [103.7980225,1.297764344]},
+            "properties" : { "name" : "37 Tanglin Halt Road","price" : 268000,"sqft" : 495}
+        },
+        { "type" : "Feature",
+            "id" : 22,
+            "geometry" : {
+                "type" : "Point",
+                "coordinates" : [103.9370919,1.334454864]},
+            "properties" : { "name" : "106 Bedok North Avenue 4","price" : 270000,"sqft" : 484}
+        },
+        { "type" : "Feature",
+            "id" : 23,
+            "geometry" : {
+                "type" : "Point",
+                "coordinates" : [103.9248947,1.333014927]},
+            "properties" : { "name" : "534 Bedok North Street 3","price" : 270000,"sqft" : 484}
+        },
+        { "type" : "Feature",
+            "id" : 24,
+            "geometry" : {
+                "type" : "Point",
+                "coordinates" : [103.8589943,1.326029942]},
+            "properties" : { "name" : "27 Jalan Bahagia","price" : 272000,"sqft" : 602}
+        },
+        { "type" : "Feature",
+            "id" : 25,
+            "geometry" : {
+                "type" : "Point",
+                "coordinates" : [103.8583543,1.330080356]},
+            "properties" : { "name" : "195 Kim Keat Avenue","price" : 275000,"sqft" : 581}
+        },
+        { "type" : "Feature",
+            "id" : 26,
+            "geometry" : {
+                "type" : "Point",
+                "coordinates" : [103.7110894,1.346497821]},
+            "properties" : { "name" : "185 Boon Lay Avenue","price" : 278000,"sqft" : 635}
+        },
+        { "type" : "Feature",
+            "id" : 27,
+            "geometry" : {
+                "type" : "Point",
+                "coordinates" : [103.8477069,1.367910414]},
+            "properties" : { "name" : "323 Ang Mo Kio Avenue 3","price" : 280000,"sqft" : 473}
+        },
+        { "type" : "Feature",
+            "id" : 28,
+            "geometry" : {
+                "type" : "Point",
+                "coordinates" : [103.8577704,1.326985571]},
+            "properties" : { "name" : "34 Jalan Bahagia","price" : 280000,"sqft" : 56}
+        },
+        { "type" : "Feature",
+            "id" : 29,
+            "geometry" : {
+                "type" : "Point",
+                "coordinates" : [103.8860421,1.326153442]},
+            "properties" : { "name" : "46 Circuit Road","price" : 280000,"sqft" : 559}
+        },
+        { "type" : "Feature",
+            "id" : 30,
+            "geometry" : {
+                "type" : "Point",
+                "coordinates" : [103.8861101,1.326646789]},
+            "properties" : { "name" : "44 Circuit Road","price" : 282000,"sqft" : 559}
+        },
+        { "type" : "Feature",
+            "id" : 31,
+            "geometry" : {
+                "type" : "Point",
+                "coordinates" : [103.8575733,1.326730559]},
+            "properties" : { "name" : "35 Jalan Bahagia","price" : 283000,"sqft" : 602}
+        },
+        { "type" : "Feature",
+            "id" : 32,
+            "geometry" : {
+                "type" : "Point",
+                "coordinates" : [103.8575733,1.326730559]},
+            "properties" : { "name" : "35 Jalan Bahagia","price" : 283000,"sqft" : 603}
+        },
+        { "type" : "Feature",
+            "id" : 33,
+            "geometry" : {
+                "type" : "Point",
+                "coordinates" : [103.8939761,1.362713039]},
+            "properties" : { "name" : "6 Hougang Avenue 3","price" : 283000,"sqft" : 635}
+        },
+        { "type" : "Feature",
+            "id" : 34,
+            "geometry" : {
+                "type" : "Point",
+                "coordinates" : [103.8101214,1.286755877]},
+            "properties" : { "name" : "28 Hoy Fatt","price" : 283000,"sqft" : 506}
+        },
+        { "type" : "Feature",
+            "id" : 35,
+            "geometry" : {
+                "type" : "Point",
+                "coordinates" : [103.7102981,1.34526143]},
+            "properties" : { "name" : "187 Boon Lay Avenue","price" : 285000,"sqft" : 635}
+        },
+        { "type" : "Feature",
+            "id" : 36,
+            "geometry" : {
+                "type" : "Point",
+                "coordinates" : [103.8583543,1.330080356]},
+            "properties" : { "name" : "195 Kim Keat Avenue","price" : 285000,"sqft" : 710}
+        },
+        { "type" : "Feature",
+            "id" : 37,
+            "geometry" : {
+                "type" : "Point",
+                "coordinates" : [103.8583543,1.330080356]},
+            "properties" : { "name" : "195 Kim Keat Avenue","price" : 285000,"sqft" : 765}
+        },
+        { "type" : "Feature",
+            "id" : 38,
+            "geometry" : {
+                "type" : "Point",
+                "coordinates" : [103.7766954,1.439911696]},
+            "properties" : { "name" : "2 Marsiling Drive","price" : 285000,"sqft" : 699}
+        },
+        { "type" : "Feature",
+            "id" : 39,
+            "geometry" : {
+                "type" : "Point",
+                "coordinates" : [103.8363211,1.355192433]},
+            "properties" : { "name" : "24 Sin Ming Road","price" : 285000,"sqft" : 699}
+        },
+        { "type" : "Feature",
+            "id" : 40,
+            "geometry" : {
+                "type" : "Point",
+                "coordinates" : [103.8202273,1.285967511]},
+            "properties" : { "name" : "Hoy Fatt","price" : 285000,"sqft" : 505}
+        },
+        { "type" : "Feature",
+            "id" : 41,
+            "geometry" : {
+                "type" : "Point",
+                "coordinates" : [103.8856965,1.325788719]},
+            "properties" : { "name" : "47 Circuit Road","price" : 285000,"sqft" : 602}
+        },
+        { "type" : "Feature",
+            "id" : 42,
+            "geometry" : {
+                "type" : "Point",
+                "coordinates" : [103.8855653,1.32488361]},
+            "properties" : { "name" : "50 Circuit Road","price" : 285000,"sqft" : 602}
+        },
+        { "type" : "Feature",
+            "id" : 43,
+            "geometry" : {
+                "type" : "Point",
+                "coordinates" : [103.8864622,1.325020188]},
+            "properties" : { "name" : "58 Circuit Road","price" : 285000,"sqft" : 603}
+        },
+        { "type" : "Feature",
+            "id" : 44,
+            "geometry" : {
+                "type" : "Point",
+                "coordinates" : [103.8857549,1.322651744]},
+            "properties" : { "name" : "85 Circuit Road","price" : 285000,"sqft" : 645}
+        },
+        { "type" : "Feature",
+            "id" : 45,
+            "geometry" : {
+                "type" : "Point",
+                "coordinates" : [103.7766954,1.439911696]},
+            "properties" : { "name" : "2 Marsiling Dr","price" : 285000,"sqft" : 720}
+        },
+        { "type" : "Feature",
+            "id" : 46,
+            "geometry" : {
+                "type" : "Point",
+                "coordinates" : [103.8931869,1.363144397]},
+            "properties" : { "name" : "2 Hougang Avenue 3","price" : 287000,"sqft" : 635}
+        },
+        { "type" : "Feature",
+            "id" : 47,
+            "geometry" : {
+                "type" : "Point",
+                "coordinates" : [103.8587822,1.326628006]},
+            "properties" : { "name" : "Jalan Bahagia","price" : 287000,"sqft" : 602}
+        },
+        { "type" : "Feature",
+            "id" : 48,
+            "geometry" : {
+                "type" : "Point",
+                "coordinates" : [103.8388649,1.287678217]},
+            "properties" : { "name" : "9 Jalan kukoh","price" : 288000,"sqft" : 580}
+        },
+        { "type" : "Feature",
+            "id" : 49,
+            "geometry" : {
+                "type" : "Point",
+                "coordinates" : [103.7240502,1.335698739]},
+            "properties" : { "name" : "121 Yuan Ching Road","price" : 290000,"sqft" : 657}
+        },
+        { "type" : "Feature",
+            "id" : 50,
+            "geometry" : {
+                "type" : "Point",
+                "coordinates" : [103.7787019,1.437806281]},
+            "properties" : { "name" : "129 Marsiling Rise","price" : 290000,"sqft" : 646}
+        } ]
+}
+
