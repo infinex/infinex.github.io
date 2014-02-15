@@ -41,10 +41,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="56" selection-start="1678" selection-end="1678" vertical-scroll-proportion="0.36499068" vertical-offset="314" max-vertical-offset="1365">
+            <state line="34" column="56" selection-start="1678" selection-end="1678" vertical-scroll-proportion="-8.166667" vertical-offset="314" max-vertical-offset="1365">
               <folding />
             </state>
           </provider>
@@ -61,10 +61,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hexbin.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="hexbin.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/property/hexbin.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="28" selection-start="1325" selection-end="1325" vertical-scroll-proportion="-13.75" vertical-offset="450" max-vertical-offset="3390">
+            <state line="87" column="73" selection-start="2608" selection-end="2608" vertical-scroll-proportion="0.273743" vertical-offset="1158" max-vertical-offset="3390">
               <folding />
             </state>
           </provider>
@@ -73,7 +73,7 @@
       <file leaf-file-name="leaflet.hexbin-layer.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/property/js/leaflet.hexbin-layer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="13" selection-start="426" selection-end="426" vertical-scroll-proportion="0.0" vertical-offset="570" max-vertical-offset="2265">
+            <state line="14" column="13" selection-start="426" selection-end="426" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="2265">
               <folding />
             </state>
           </provider>
@@ -108,8 +108,8 @@
         <option value="$PROJECT_DIR$/property/js/leaflet.hexbin-layer.js" />
         <option value="$PROJECT_DIR$/property/js/quake-d3_circles.js" />
         <option value="$PROJECT_DIR$/property/circle.html" />
-        <option value="$PROJECT_DIR$/property/hexbin.html" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/property/hexbin.html" />
       </list>
     </option>
   </component>
@@ -413,6 +413,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="56" selection-start="1678" selection-end="1678" vertical-scroll-proportion="-8.166667" vertical-offset="314" max-vertical-offset="1365">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/property/circle.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="18" selection-start="1304" selection-end="1304" vertical-scroll-proportion="-24.166666" vertical-offset="230" max-vertical-offset="1215">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/property/js/quake-d3_circles.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="63" selection-start="103" selection-end="103" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1920">
@@ -429,23 +443,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/property/circle.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="18" selection-start="1304" selection-end="1304" vertical-scroll-proportion="-24.166666" vertical-offset="230" max-vertical-offset="1215">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/property/hexbin.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="28" selection-start="1325" selection-end="1325" vertical-scroll-proportion="-13.75" vertical-offset="450" max-vertical-offset="3390">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="56" selection-start="1678" selection-end="1678" vertical-scroll-proportion="0.36499068" vertical-offset="314" max-vertical-offset="1365">
+        <state line="87" column="73" selection-start="2608" selection-end="2608" vertical-scroll-proportion="0.273743" vertical-offset="1158" max-vertical-offset="3390">
           <folding />
         </state>
       </provider>
