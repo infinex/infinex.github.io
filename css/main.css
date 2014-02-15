@@ -177,7 +177,8 @@ html, body {
 }
 
 .fullscreenWithNavBar {
-    min-height: 90%;
+    min-height: 91%;
+    width: 100%;
 }
 
 

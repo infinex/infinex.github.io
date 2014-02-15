@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.css" />
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.ie.css" />
+    <![endif]-->
+
+    <script src="http://cdn.leafletjs.com/leaflet-0.5/leaflet-src.js"></script>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+
+    <style type="text/css">
+      html, body { margin: 0; padding: 0; height: 100%; }
+      #quake { min-height: 100%; }
+
+      #tooltip {
+          opacity: 0.95;
+          background: #333;
+          padding: 0px;
+          border: 1px solid lightgrey;
+          font-size: 13px;
+          border-radius: 5px;
+          position: absolute;
+          z-index: 10;
+          visibility: hidden;
+          pointer-events: none;
+      }
+
+      .overlay {
+
+
+          position: absolute;
+          z-index: 50;
+          /*Centering Method 2*/
+          margin: 0 0 0 0px;
+          top: 5%;
+          left: 5%;
+          background-color: rgba(0,0,0,0.5); /*dim the background*/
+          padding:5px
+
+      }
+
+
+
+      .overlay h2 {
+          color: white;
+          margin :0px;
+          font: bold 30px/40px Helvetica, Sans-Serif;
+          letter-spacing: -1px;
+      }
+
+
+      .overlay h3
+      {
+          margin :0px;
+          color: white;
+          font: bold 24px/35px Helvetica, Sans-Serif;
+      }
+
+
+
+    </style>
+  </head>
+  <body>
+      <div class="overlay">
+          <h2>Circle plot of Singapore land price</h2>
+          <h3>Bigger circle, larger square Feet<br>Darker color,higher price<h3>
+
+      </div>
+
+    <div id='quake' data-source="data/op.json"></div>
+    <script type="text/javascript" src="js/quake-d3_circles.js"></script>
+  </body>
+</html>
+

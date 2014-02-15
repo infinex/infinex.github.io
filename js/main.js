@@ -89,6 +89,7 @@ require(['jquery','d3','bootstrap','waypoints','leaflet','stamen','json2GeoJson'
         createMap();
 
 
+
         function createMap() {
 
             var loc = {'lat': 1.3715473, 'lon':103.8075655},
@@ -121,12 +122,6 @@ require(['jquery','d3','bootstrap','waypoints','leaflet','stamen','json2GeoJson'
                 opacity: 1,
                 fillOpacity: 0.8
             };
-
-//            L.geoJson(geoData, {
-//                pointToLayer: function (feature, latlng) {
-//                    return L.circleMarker(latlng, geojsonMarkerOptions);
-//                }
-//            }).addTo(map);
 
 
             map._initPathRoot()
