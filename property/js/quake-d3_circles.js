@@ -25,8 +25,8 @@ var svg = d3.select(map.getPanes().overlayPane).append("svg"),
 //        .interpolate(d3.interpolateHcl);
 
  color = d3.scale.linear()
-    .domain([300000,500000, 1000000])
-    .range(["#d7191c", "#ffffbf", "#2c7bb6"])
+    .domain([400000,700000, 1000000])
+    .range(["#cbbf31","#2c7bb6", "#b6672c"])
      .interpolate(d3.interpolateHcl);
 
 
