@@ -3,17 +3,17 @@ var container = L.DomUtil.get('quake'),
     map.scrollWheelZoom.disable();
 
 
-//L.tileLayer('http://{s}.tile.stamen.com/toner/{z}/{x}/{y}.png', {
-//    attribution: '<a href="http://content.stamen.com/dotspotting_toner_cartography_available_for_download">Stamen Toner</a>, <a href="http://www.openstreetmap.org/">OpenStreetMap</a>, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
-//    maxZoom: 17
-//}).addTo(map);
-
-
-L.tileLayer('http://{s}.tile.cloudmade.com/{key}/{styleId}/256/{z}/{x}/{y}.png', {
-    attribution: '&copy; 2013 OpenStreetMap &copy; 2013 CloudMade',
-    key: 'db1f78ccee5f480b82c56ff9b18639e9',//Please don't use my key. It's free!!!
-    styleId:122089  //82102  108996          //Go to www.cloudmade.com to get a key.
+L.tileLayer('http://{s}.tile.stamen.com/toner/{z}/{x}/{y}.png', {
+    attribution: '<a href="http://content.stamen.com/dotspotting_toner_cartography_available_for_download">Stamen Toner</a>, <a href="http://www.openstreetmap.org/">OpenStreetMap</a>, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
+    maxZoom: 17
 }).addTo(map);
+
+
+// L.tileLayer('http://{s}.tile.cloudmade.com/{key}/{styleId}/256/{z}/{x}/{y}.png', {
+//     attribution: '&copy; 2013 OpenStreetMap &copy; 2013 CloudMade',
+//     key: 'db1f78ccee5f480b82c56ff9b18639e9',//Please don't use my key. It's free!!!
+//     styleId:122089  //82102  108996          //Go to www.cloudmade.com to get a key.
+// }).addTo(map);
 
 
 var svg = d3.select(map.getPanes().overlayPane).append("svg"),
