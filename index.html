@@ -29,7 +29,8 @@
         margin-left: 12px;
         padding: 0 11px 0 13px;
         text-overflow: ellipsis;
-        width: 400px;
+        max-width: 400px;
+        width: 80%;
       }
 
       #pac-input:focus {
@@ -167,7 +168,6 @@ google.maps.event.addDomListener(window, 'load', initialize);
   <body>
     <input id="pac-input" class="controls" type="text"
         placeholder="Enter a location">
-
     </div>
     <div id="map-canvas"></div>
   </body>
