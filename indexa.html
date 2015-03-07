@@ -11,17 +11,17 @@
  <script src="https://cdn.firebase.com/js/client/2.2.2/firebase.js"></script>
 <script> 
 function initialize() {
-  var myFirebaseRef = new Firebase("https://map-magic.firebaseio.com/attributes");
+  var myFirebaseRef = new Firebase("https://map-magic.firebaseio.com/");
 
  myFirebaseRef.on("child_changed", function(snapshot) {
 
 console.log(snapshot.val())
 if(snapshot.key()=="name")
-{
+{ 
   url="http://maps.apple.com/?q=" + snapshot.val();
       var userAgent = window.navigator.userAgent;
       if (userAgent.match(/iPad/i) || userAgent.match(/iPhone/i)) {
-        window.location =url;
+       window.location =url;
       }
 
 }
