@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Place Autocomplete</title>
+    <title>Google Maps</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
     <style>
+      #nav { z-index: 100; position: absolute;bottom: 100px; left: 0px ; width: 100px;height: 100px  }
+
       html, body, #map-canvas {
         height: 100%;
         margin: 0px;
@@ -29,7 +32,8 @@
         margin-left: 12px;
         padding: 0 11px 0 13px;
         text-overflow: ellipsis;
-        width: 400px;
+        max-width: 400px;
+        width: 80%;
       }
 
       #pac-input:focus {
@@ -54,11 +58,19 @@
 
     </style>
     <script src="https://cdn.firebase.com/js/client/2.2.2/firebase.js"></script>
+    <script src="http://cdn.bootcss.com/screenfull.js/2.0.0/screenfull.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true&libraries=places"></script>
 
     <script>
 function initialize() {
 
+document.getElementById('nav').addEventListener('click', function () {
+    if (screenfull.enabled) {
+        screenfull.request();
+    } else {
+        // Ignore or do something else
+    }
+});
 
   var myFirebaseRef = new Firebase("https://map-magic.firebaseio.com/");
 
@@ -87,18 +99,16 @@ function initialize() {
 var service = new google.maps.places.PlacesService(map);
 
     myFirebaseRef.child('placeId').on("value", function(snapshot) {
-    console.log(snapshot.val());
 
      var request = {
         placeId: snapshot.val()
       };
 
-
    service.getDetails(request, function(place, status) {
     if (status == google.maps.places.PlacesServiceStatus.OK) {
-      place.url
-    var url = place.url.replace("/place", "");
-    window.location.href = url;
+          
+        var url = place.url.replace("/place", "");
+        window.location.href = url;
         //setMarkerAndCenterMap(place)
     }
   });
@@ -138,7 +148,7 @@ var setMarkerAndCenterMap=function(place)
         (place.address_components[2] && place.address_components[2].short_name || '')
       ].join(' ');
     }
-    infowindow.setContent('<div><strong>' + place.name + '</strong><br>' + address);
+    infowindow.setContent('<div><strong>' + place.name + '</strong>');
     infowindow.open(map, marker);  
 }
 
@@ -158,7 +168,6 @@ var setMarkerAndCenterMap=function(place)
     var radioButton = document.getElementById(id);
     google.maps.event.addDomListener(radioButton, 'click', function() {
       autocomplete.setTypes(types);
-
     });
   }
 
@@ -172,8 +181,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
   <body>
     <input id="pac-input" class="controls" type="text"
         placeholder="Enter a location">
-
-    </div>
+    <div id="nav" style="opacity:0.01">full screen</div>  
     <div id="map-canvas"></div>
   </body>
 </html>
