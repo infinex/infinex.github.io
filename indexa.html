@@ -21,7 +21,7 @@ if(snapshot.key()=="name")
   url="http://maps.apple.com/?q=" + snapshot.val();
       var userAgent = window.navigator.userAgent;
       if (userAgent.match(/iPad/i) || userAgent.match(/iPhone/i)) {
-       window.location =url;
+       window.location.href =url;
       }
 
 }
