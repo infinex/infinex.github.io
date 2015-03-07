@@ -108,8 +108,7 @@ var service = new google.maps.places.PlacesService(map);
    service.getDetails(request, function(place, status) {
     if (status == google.maps.places.PlacesServiceStatus.OK) {
           
-        var url = place.url.replace("/place", "");
-        window.location.href = url;
+
 
 //         setTimeout(function() {
 // window.location.href = "https://google.com";
@@ -117,6 +116,8 @@ var service = new google.maps.places.PlacesService(map);
 
 
         setMarkerAndCenterMap(place)
+        var url = place.url.replace("/place", "");
+        window.location.href = url;
     }
   });
 });
