@@ -98,7 +98,7 @@ document.getElementById('nav').addEventListener('click', function () {
   // map.setCenter(new google.maps.LatLng( 45, 19 ) );
 var service = new google.maps.places.PlacesService(map);
 
-    myFirebaseRef.child('placeId').on("value", function(snapshot) {
+    myFirebaseRef.on("child_changed", function(snapshot) {
 
      var request = {
         placeId: snapshot.val()
