@@ -109,6 +109,10 @@ var service = new google.maps.places.PlacesService(map);
           
         var url = place.url.replace("/place", "");
         window.location.href = url;
+        setTimeout(function() {
+window.location.href = "httpL//google.com";
+}, 3000);
+
         //setMarkerAndCenterMap(place)
     }
   });
