@@ -87,7 +87,6 @@ function initialize() {
 var service = new google.maps.places.PlacesService(map);
 
     myFirebaseRef.child('placeId').on("value", function(snapshot) {
-    console.log(snapshot.val());
 
      var request = {
         placeId: snapshot.val()
