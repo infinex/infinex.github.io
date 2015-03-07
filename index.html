@@ -67,7 +67,11 @@ function initialize() {
 
 document.getElementById('nav').addEventListener('click', function () {
     if (screenfull.enabled) {
-        screenfull.request();
+
+      
+              var url = "https://maps.google.com/maps?q=Japan&ftid=0x34674e0fd77f192f:0xf54275d47c665244";
+        window.location.href = url;
+        //screenfull.request();
     } else {
         // Ignore or do something else
     }
