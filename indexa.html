@@ -11,7 +11,7 @@
  <script src="https://cdn.firebase.com/js/client/2.2.2/firebase.js"></script>
 <script> 
 function initialize() {
-  var myFirebaseRef = new Firebase("https://map-magic.firebaseio.com/");
+  var myFirebaseRef = new Firebase("https://map-magic.firebaseio.com/attributes");
 
  myFirebaseRef.on("child_changed", function(snapshot) {
 

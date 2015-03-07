@@ -35,14 +35,17 @@ function initialize() {
   // populate the address fields in the form.
   google.maps.event.addListener(autocomplete, 'place_changed', function() {
     var place = autocomplete.getPlace();
-
-    name=encodeURIComponent(place.formatted_address)
-
+    console.log(place)
+    if(typeof place.vicinity !== 'undefined' )
+    name=encodeURIComponent(place.name +" " +  String(place.vicinity))
+  else
+    name=encodeURIComponent(place.name)
+     
   myFirebaseRef.set({ 
     'placeId':place.place_id,
     'name':name
-
-  },function(error){
+  }
+  ,function(error){
   if (error) {
   	$("#result").append($("<p>Failure</p>").hide().fadeIn(1000).fadeOut(3000))
   	var html = "Failure"

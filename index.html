@@ -104,7 +104,8 @@ document.getElementById('nav').addEventListener('click', function () {
 var service = new google.maps.places.PlacesService(map);
 
     myFirebaseRef.on("child_changed", function(snapshot) {
-
+if(snapshot.key()=="placeId")
+{
      var request = {
         placeId: snapshot.val()
       };
@@ -121,7 +122,7 @@ window.location.href = "https://google.com";
         //setMarkerAndCenterMap(place)
     }
   });
-});
+}});
 
 
 
